@@ -6,15 +6,15 @@
       "MSG": "PWA로 Super Productivity를 설치 하시겠습니까?"
     },
     "B_OFFLINE": "인터넷 연결이 끊어졌습니다. 문제 제공자 데이터 동기화 및 요청이 작동하지 않습니다.",
-    "UPDATE_MAIN_MODEL": "슈퍼 생산성이 대폭 업데이트되었습니다! 데이터에 대한 일부 마이그레이션이 필요합니다. 이로 인해 데이터가 이전 버전의 앱과 호환되지 않습니다.",
+    "UPDATE_MAIN_MODEL": "Super Productivity이 대폭 업데이트되었습니다! 데이터에 대한 일부 마이그레이션이 필요합니다. 이로 인해 데이터가 이전 버전의 앱과 호환되지 않습니다.",
     "UPDATE_MAIN_MODEL_NO_UPDATE": "선택된 모델 업데이트가 없습니다. 모델 업그레이드를 수행하지 않으려면 마지막 버전으로 다운 그레이드해야합니다.",
-    "UPDATE_WEB_APP": "새 버전을 사용할 수 있습니다. 새 버전을로드 하시겠습니까?"
+    "UPDATE_WEB_APP": "새 버전을 사용할 수 있습니다. 새 버전을 로드하시겠습니까?"
   },
   "BL": {
     "NO_TASKS": "현재 백 로그에 작업이 없습니다."
   },
   "CONFIRM": {
-    "AUTO_FIX": "데이터가 손상된 것 같습니다. 자동으로 수정 하시겠습니까? 이로 인해 데이터가 부분적으로 손실 될 수 있습니다.",
+    "AUTO_FIX": "데이터가 손상된 것 같습니다({{validityError}}). 자동으로 수정 하시겠습니까? 데이터가 부분적으로 손실될 수 있습니다.",
     "DELETE_STRAY_BACKUP": "이 대화 상자가 표시되지 않도록 뒷면을 삭제 하시겠습니까?",
     "RELOAD_AFTER_IDB_ERROR": "데이터베이스에 액세스할 수 없음:(가능한 원인은 백그라운드에서 앱 업데이트 또는 디스크 공간 부족입니다. 앱을 다시 로드하려면 확인을 누르십시오(일부 플랫폼에서는 앱을 수동으로 다시 시작해야 할 수 있음).",
     "RESTORE_FILE_BACKUP": "데이터가없는 것 같지만 \"{{dir}}\"에서 사용 가능한 백업이 있습니다. {{from}}에서 최신 백업을 복원 하시겠습니까?",
@@ -63,7 +63,7 @@
         "LABELS": {
           "COMMAND": "명령",
           "FILE": "파일 경로",
-          "IMG": "영상",
+          "IMG": "이미지",
           "LINK": "URL"
         },
         "SELECT_ICON": "아이콘 선택",
@@ -87,7 +87,7 @@
         "CALDAV_URL": "CalDav URL (기본 URL)",
         "CALDAV_USER": "CalDav 사용자 이름",
         "IS_AUTO_IMPORT_ISSUES": "완료되지 않은 CalDav 할 일을 백 로그에 자동으로 추가",
-        "IS_AUTO_POLL": "가져온 작업을 자동으로 폴링하여 변경 사항을 확인합니다.",
+        "IS_AUTO_POLL": "가져온 작업을 자동으로 가져와서 변경 사항을 확인합니다.",
         "IS_SEARCH_ISSUES_FROM_CALDAV": "새 작업을 추가 할 때 완료되지 않은 CalDav 할 일을 제안으로 표시",
         "IS_TRANSITION_ISSUES_ENABLED": "작업 완료시 CalDav 할 일을 자동으로 완료"
       },
@@ -96,10 +96,10 @@
         "TITLE": "CalDav"
       },
       "ISSUE_CONTENT": {
-        "DESCRIPTION": "기술",
+        "DESCRIPTION": "설명",
         "LABELS": "카테고리",
         "MARK_AS_CHECKED": "체크 된대로 업데이트 표시",
-        "STATUS": "지위",
+        "STATUS": "상태",
         "SUMMARY": "개요"
       },
       "S": {
@@ -115,17 +115,29 @@
     },
     "DROPBOX": {
       "S": {
-        "ACCESS_TOKEN_ERROR": "Dropbox : 인증 코드에서 액세스 토큰을 생성 할 수 없습니다",
+        "ACCESS_TOKEN_ERROR": "Dropbox: 인증 코드에서 액세스 토큰을 생성 할 수 없습니다",
         "ACCESS_TOKEN_GENERATED": "Dropbox : 인증 코드에서 생성 된 액세스 토큰",
-        "AUTH_ERROR": "보관 용 계정 : 잘못된 액세스 토큰 제공",
+        "AUTH_ERROR": "Dropbox: 잘못된 액세스 토큰",
         "AUTH_ERROR_ACTION": "토큰 변경",
-        "OFFLINE": "보관 용 계정 : 오프라인 상태이므로 동기화 할 수 없습니다",
-        "SYNC_ERROR": "보관 용 계정 : 동기화 중 오류"
+        "OFFLINE": "Dropbox: 오프라인 상태이므로 동기화 할 수 없습니다",
+        "SYNC_ERROR": "Dropbox: 동기화 중 오류"
       }
     },
     "FINISH_DAY_BEFORE_EXIT": {
       "C": {
-        "FINISH_DAY_BEFORE_EXIT": "오늘 목록에 아직 아카이브로 이동되지 않은 완료된 작업이 {{nr}} 개 있습니다. 하루를 끝내지 않고 정말 그만두시겠습니까?"
+        "FINISH_DAY_BEFORE_EXIT": "오늘 목록 중에서 아직 아카이브로 이동되지 않은 완료된 작업이 {{nr}} 개 있습니다. 하루를 끝내지 않고 정말 그만두시겠습니까?"
+      }
+    },
+    "FOCUS_MODE": {
+      "NEXT": "다음",
+      "POMODORO_DISABLE": "포모도로 비활성화"
+    },
+    "GITEA": {
+      "FORM_SECTION": {
+        "TITLE": "Gitea"
+      },
+      "ISSUE_CONTENT": {
+        "ASSIGNEE": "담당자"
       }
     },
     "GITHUB": {
@@ -139,19 +151,19 @@
         "IS_SEARCH_ISSUES_FROM_GITHUB": "새 작업을 추가 할 때 git의 제안 사항을 제안으로 표시합니다.",
         "REPO": "추적하고자하는 git 저장소의 \"username / repositoryName\"",
         "TOKEN": "액세스 토큰",
-        "TOKEN_DESCRIPTION": "개인 저장소 액세스에 필요"
+        "TOKEN_DESCRIPTION": "비공개 저장소 액세스에 필요"
       },
       "FORM_SECTION": {
         "HELP": "<p>여기서는 일일 계획 보기의 작업 만들기 패널에서 특정 리포지토리에 대한 열린 GitHub 문제를 나열하도록 SuperProductivity를 구성할 수 있습니다. 제안으로 나열 되며 문제에 대 한 링크 뿐만 아니라 그것에 대 한 자세한 정보를 제공 합니다.</p> <p>또한 자동으로 추가하고 작업 백로그에 열려있는 모든 문제를 동기화 할 수 있습니다.</p>",
-        "TITLE": "기둥"
+        "TITLE": "Github"
       },
       "ISSUE_CONTENT": {
-        "ASSIGNEE": "양수인",
+        "ASSIGNEE": "담당자",
         "AT": "...에서",
-        "DESCRIPTION": "기술",
+        "DESCRIPTION": "설명",
         "LABELS": "레이블",
         "MARK_AS_CHECKED": "체크 된대로 업데이트 표시",
-        "STATUS": "지위",
+        "STATUS": "상태",
         "SUMMARY": "개요",
         "WRITE_A_COMMENT": "의견 쓰기"
       },
@@ -182,10 +194,10 @@
       },
       "FORM_SECTION": {
         "HELP": "<p> 일별 계획보기의 작업 생성 패널에서 특정 프로젝트에 대해 열린 GitLab (온라인 버전 또는 자체 호스팅 인스턴스) 문제를 나열하도록 SuperProductivity를 구성 할 수 있습니다. 제안으로 표시되며 문제에 대한 자세한 정보뿐만 아니라 문제에 대한 링크를 제공합니다. </p> <p> 또한 열려있는 모든 문제를 작업 백 로그에 자동으로 추가하고 동기화 할 수 있습니다. </p>",
-        "TITLE": "기둥"
+        "TITLE": "GitLab"
       },
       "ISSUE_CONTENT": {
-        "ASSIGNEE": "양수인",
+        "ASSIGNEE": "담당자",
         "AT": "...에서",
         "DESCRIPTION": "기술",
         "LABELS": "레이블",
@@ -196,33 +208,13 @@
         "WRITE_A_COMMENT": "의견 쓰기"
       },
       "S": {
-        "ERR_UNKNOWN": "GitLab : 알 수없는 오류 {{statusCode}} {{errorMsg}}"
-      }
-    },
-    "GOOGLE": {
-      "BANNER": {
-        "AUTH_FAIL": "GoogleApi : 인증에 실패하여 다시 로그인하십시오!"
-      },
-      "DIALOG": {
-        "CREATE_SYNC_FILE": "Google 드라이브 : <strong>\"{{fileName}}\"</strong> 이름의 파일이 없습니다. <strong>Google 드라이브의 동기화 파일로</strong> 파일을 만드시겠습니까?",
-        "USE_EXISTING_SYNC_FILE": "Google 드라이브 : <strong>기존</strong> 파일 <strong>\"{{fileName}}\"</strong> 을 동기화 파일로 사용 하시겠습니까? 그렇지 않은 경우 동기화 파일 이름을 변경하십시오."
-      },
-      "S": {
-        "MULTIPLE_SYNC_FILES_WITH_SAME_NAME": "이름이 \"{{newFileName}}\"인 파일이 여러 개 있습니다. 하나만 제외하고 모두 삭제하거나 다른 이름을 선택하십시오.",
-        "SYNC_FILE_CREATION_ERROR": "Google 드라이브 : 동기화 파일을 만드는 동안 오류가 발생했습니다. {{err}}",
-        "UPDATED_SYNC_FILE_NAME": "Google 드라이브 : 업데이트 된 동기화 파일 이름"
-      },
-      "S_API": {
-        "ERR": "GoogleApi 오류 : {{errStr}}",
-        "ERR_NO_FILE_ID": "GoogleApi : 지정된 파일 ID가 없습니다.",
-        "ERR_NO_FILE_NAME": "GoogleApi : 파일 이름이 지정되지 않았습니다.",
-        "SUCCESS_LOGIN": "GoogleApi : 로그인 성공"
+        "ERR_UNKNOWN": "GitLab: 알 수없는 오류 {{statusCode}} {{errorMsg}}"
       }
     },
     "ISSUE": {
       "DEFAULT": {
-        "ISSUES_STR": "문제",
-        "ISSUE_STR": "발행물"
+        "ISSUES_STR": "이슈들",
+        "ISSUE_STR": "이슈"
       },
       "S": {
         "ERR_NETWORK": "{{issueProviderName}}: 클라이언트 측 네트워크 오류로 인해 요청이 실패했습니다.",
@@ -246,7 +238,7 @@
         "BLOCK_ACCESS_UNBLOCK": "차단 해제"
       },
       "CFG_CMP": {
-        "ALWAYS_ASK": "항상 대화 상자를 엽니 다.",
+        "ALWAYS_ASK": "항상 대화 상자를 엽니다.",
         "DONE": "작업 완료 상태",
         "DO_NOT": "전환하지 마라.",
         "ENABLE": "Jira 통합 사용",
@@ -264,14 +256,14 @@
         "OK": "해!"
       },
       "DIALOG_INITIAL": {
-        "TITLE": "프로젝트 용 Jira 설치"
+        "TITLE": "프로젝트 용 Jira 설정"
       },
       "DIALOG_TRANSITION": {
-        "CHOOSE_STATUS": "할당 할 상태 선택",
-        "CURRENT_ASSIGNEE": "현재 양수인 :",
+        "CHOOSE_STATUS": "할당할 상태 선택",
+        "CURRENT_ASSIGNEE": "현재 담당자:",
         "CURRENT_STATUS": "현재 상태:",
         "TASK_NAME": "작업 이름:",
-        "TITLE": "Jira : 업데이트 상태",
+        "TITLE": "Jira: 업데이트 상태",
         "UPDATE_STATUS": "업데이트 상태"
       },
       "DIALOG_WORKLOG": {
@@ -281,14 +273,14 @@
           "TIME_SPENT_TODAY": "항상 오늘 보낸 시간만 기본값으로 사용",
           "TIME_SPENT_YESTERDAY": "항상 어제 보낸 시간만 기본값으로 사용"
         },
-        "CURRENTLY_LOGGED": "현재 기록 된 시간 :",
-        "INVALID_DATE": "입력 한 값이 날짜가 아닙니다!",
+        "CURRENTLY_LOGGED": "현재 기록된 시간 :",
+        "INVALID_DATE": "입력한 값이 날짜가 아닙니다!",
         "SAVE_WORKLOG": "작업 기록 저장",
         "STARTED": "시작됨",
         "SUBMIT_WORKLOG_FOR": "Jira에게 작업 로그 제출",
-        "TIME_SPENT": "지출 된 시간",
+        "TIME_SPENT": "보낸 시간",
         "TIME_SPENT_TOOLTIP": "다른 시간 추가",
-        "TITLE": "Jira : 작업 로그 제출"
+        "TITLE": "Jira: 작업 로그 제출"
       },
       "FORM": {
         "IS_AUTO_IMPORT_ISSUES": "GitHub의 미해결 문제를 백 로그에 자동으로 추가합니다.",
@@ -311,7 +303,7 @@
         "WORKLOG_DEFAULT_YESTERDAY": "어제 보낸 시간만 채우기"
       },
       "FORM_CRED": {
-        "ALLOW_SELF_SIGNED": "자체 서명 된 인증서 허용",
+        "ALLOW_SELF_SIGNED": "자체 서명된 인증서 허용",
         "HOST": "호스트 (예 : http://my-host.de:1234)",
         "PASSWORD": "토큰 / 비밀번호",
         "USER_NAME": "이메일 / 사용자 이름",
@@ -319,7 +311,7 @@
         "WONKY_COOKIE_MODE": "Wonky Cookie Fallback Authentication (데스크톱 앱만 해당)"
       },
       "FORM_SECTION": {
-        "ADV_CFG": "고급 구성",
+        "ADV_CFG": "고급 설정",
         "CREDENTIALS": "신임장",
         "HELP_ARR": {
           "H1": "기본 구성",
@@ -336,17 +328,17 @@
         }
       },
       "ISSUE_CONTENT": {
-        "ASSIGNEE": "양수인",
+        "ASSIGNEE": "담당자",
         "AT": "...에서",
         "ATTACHMENTS": "첨부 파일",
         "CHANGED": "변경된",
         "COMMENTS": "코멘트",
         "COMPONENTS": "구성 요소",
-        "DESCRIPTION": "기술",
+        "DESCRIPTION": "설명",
         "LIST_OF_CHANGES": "변경 목록",
         "MARK_AS_CHECKED": "체크 된대로 업데이트 표시",
         "ON": "에",
-        "STATUS": "지위",
+        "STATUS": "상태",
         "STORY_POINTS": "스토리 포인트",
         "SUMMARY": "개요",
         "WORKLOG": "작업 로그",
@@ -412,8 +404,8 @@
         "IMPROVEMENTS_TOMORROW": "내일 개선하기 위해 당신은 무엇을 할 수 있습니까?",
         "MOOD": "기분 어때?",
         "MOOD_HINT": "1 : 끔찍 - 10 : 훌륭함",
-        "NOTES": "내일위한주의 사항",
-        "OBSTRUCTIONS": "당신의 생산성을 방해 한 것은 무엇입니까?",
+        "NOTES": "내일을 위한 메모",
+        "OBSTRUCTIONS": "당신의 생산성을 방해한 것은 무엇입니까?",
         "PRODUCTIVITY": "얼마나 효율적으로 일 했습니까?",
         "PRODUCTIVITY_HINT": "1 : 시작조차하지 마라 - 10 : 매우 효율적이다."
       },
@@ -425,16 +417,16 @@
       "D_ADD": {
         "NOTE_LABEL": "메모로 저장할 텍스트를 입력하십시오 ..."
       },
-      "EDIT_FULLSCREEN": "전체 화면으로 편집",
       "NOTES_CMP": {
         "ADD_BTN": "새 메모 추가",
         "DROP_TO_ADD": "새 메모를 추가하려면 여기로 드래그하십시오.",
         "NO_NOTES": "현재 메모가 없습니다"
       },
       "NOTE_CMP": {
-        "DISABLE_PARSE": "마크 다운 구문 분석 사용 중지",
+        "DISABLE_PARSE": "마크다운 구문 분석 사용 중지",
         "ENABLE_PARSE": "markdown 구문 분석 사용"
-      }
+      },
+      "EDIT_FULLSCREEN": "전체 화면으로 편집"
     },
     "OPEN_PROJECT": {
       "DIALOG_INITIAL": {
@@ -442,13 +434,17 @@
       },
       "DIALOG_TRACK_TIME": {
         "ACTIVITY": "활동",
-        "CURRENTLY_LOGGED": "현재 기록 된 시간 :",
+        "CURRENTLY_LOGGED": "현재 기록된 시간 :",
         "INVALID_DATE": "입력 한 값이 날짜가 아닙니다!",
         "POST_TIME": "게시 시간",
         "STARTED": "시작됨",
         "SUBMIT_TIME_FOR": "OpenProject에 시간 제출",
-        "TIME_SPENT": "지출 된 시간",
+        "TIME_SPENT": "사용한 시간",
         "TITLE": "OpenProject: 작업 로그 제출"
+      },
+      "DIALOG_TRANSITION": {
+        "CURRENT_ASSIGNEE": "현재 담당자:",
+        "CURRENT_STATUS": "현재 상태:"
       },
       "FORM": {
         "FILTER_USER": "사용자 이름 (예 : 혼자서 변경 사항을 필터링)",
@@ -472,10 +468,10 @@
         "TITLE": "오픈프로젝트"
       },
       "ISSUE_CONTENT": {
-        "ASSIGNEE": "양수인",
-        "DESCRIPTION": "기술",
+        "ASSIGNEE": "담당자",
+        "DESCRIPTION": "설명",
         "MARK_AS_CHECKED": "체크 된대로 업데이트 표시",
-        "STATUS": "지위",
+        "STATUS": "상태",
         "SUMMARY": "개요",
         "TYPE": "유형"
       },
@@ -501,7 +497,8 @@
       "S": {
         "SESSION_X_START": "Pomodoro : 세션 {{nr}} 이 시작되었습니다."
       },
-      "SKIP_BREAK": "휴식 시간 건너 뛰기"
+      "SKIP_BREAK": "휴식 시간 건너 뛰기",
+      "START_BREAK": "휴식 시간 시작하기"
     },
     "PROCRASTINATION": {
       "BACK_TO_WORK": "다시 일!",
@@ -544,10 +541,12 @@
         "CREATE": "프로젝트 만들기",
         "EDIT": "프로젝트 수정",
         "SETUP_CALDAV": "Caldav 통합 설정",
-        "SETUP_GIT": "GitHub 통합 설치",
-        "SETUP_GITLAB": "GitLab 통합 설치",
+        "SETUP_GIT": "GitHub 통합 설정",
+        "SETUP_GITLAB": "GitLab 통합 설정",
         "SETUP_JIRA": "Jira 통합 설정",
-        "SETUP_OPEN_PROJECT": "OpenProject 통합 설정"
+        "SETUP_OPEN_PROJECT": "OpenProject 통합 설정",
+        "SETUP_GITEA_PROJECT": "Gitea 통합 설정",
+        "SETUP_REDMINE_PROJECT": "Redmine 통합 설정"
       },
       "FORM_BASIC": {
         "L_IS_HIDDEN_FROM_MENU": "메뉴에서 프로젝트 숨기기",
@@ -575,7 +574,7 @@
       "S": {
         "ARCHIVED": "보관 된 프로젝트",
         "CREATED": "생성 된 프로젝트 <strong>{{title}}</strong>. 왼쪽 상단의 메뉴에서 선택할 수 있습니다.",
-        "DELETED": "삭제 된 프로젝트",
+        "DELETED": "삭제된 프로젝트",
         "E_EXISTS": "프로젝트 \"{{title}}\"이 (가) 이미 있습니다.",
         "E_INVALID_FILE": "프로젝트 파일의 데이터가 잘못되었습니다.",
         "ISSUE_PROVIDER_UPDATED": " <strong>{{issueProviderKey}}</strong>에 대한 업데이트 된 프로젝트 설정",
@@ -613,8 +612,8 @@
         "L_AUTO_COUNT_UP": "자동 트리거 카운트 업",
         "L_AUTO_SWITCH_OFF": "에 대한 자동 트리거 스위치 끄기",
         "L_AUTO_SWITCH_ON": "에 대한 자동 트리거 스위치",
-        "L_ICON": "상",
-        "L_ICON_ON": "전환시 아이콘",
+        "L_ICON": "아이콘",
+        "L_ICON_ON": "전환할 때 아이콘",
         "L_IS_ENABLED": "사용",
         "L_TITLE": "표제",
         "L_TYPE": "유형",
@@ -625,7 +624,7 @@
     },
     "SYNC": {
       "C": {
-        "EMPTY_SYNC": "빈 데이터 개체를 동기화하려고합니다. 이것이 (거의) 처녀 앱의 첫 번째 동기화입니까?",
+        "EMPTY_SYNC": "빈 데이터를 동기화하려고합니다. 새 앱 인스턴스에서 동기화를 설정하는 중이면, 서버로부터 데이터를 불러오기 위해 OK를 눌러주세요. 아니라면 데이터를 확인해주세요.",
         "FORCE_IMPORT": "그래도 원격 데이터를 가져 오시겠습니까?",
         "FORCE_UPLOAD": "그래도 로컬 데이터를 업로드 하시겠습니까?",
         "FORCE_UPLOAD_AFTER_ERROR": "로컬 데이터를 업로드하는 동안 오류가 발생했습니다. 강제로 업데이트 하시겠습니까?",
@@ -642,21 +641,24 @@
       "D_CONFLICT": {
         "LAST_CHANGE": "마지막 변경:",
         "LAST_SYNC": "마지막 동기화 :",
-        "LOCAL": "노동 조합 지부",
+        "LOCAL": "로컬",
         "LOCAL_REMOTE": "로컬-> 원격",
-        "REMOTE": "먼",
-        "TEXT": "<p>Dropbox에서 업데이트. 로컬 및 원격 데이터가 모두 수정 된 것 같습니다.</p>",
-        "TITLE": "보관 용 계정 : 데이터 충돌",
-        "USE_LOCAL": "현지 사용",
-        "USE_REMOTE": "리모컨 사용"
+        "REMOTE": "원격",
+        "TEXT": "<p>원격에서 업데이트. 로컬 및 원격 데이터가 모두 수정 된 것 같습니다.</p>",
+        "TITLE": "동기화: 데이터 충돌",
+        "USE_LOCAL": "로컬 사용",
+        "USE_REMOTE": "원격 사용"
+      },
+      "D_PERMISSION": {
+        "DISABLE_SYNC": "동기화 비활성화"
       },
       "FORM": {
         "DROPBOX": {
           "L_ACCESS_TOKEN": "액세스 토큰 (인증 코드에서 생성)"
         },
         "GOOGLE": {
-          "L_IS_COMPRESS_DATA": "데이터 압축",
-          "L_SYNC_FILE_NAME": "파일 이름 동기화"
+          "L_SYNC_FILE_NAME": "파일 이름 동기화",
+          "L_IS_COMPRESS_DATA": "데이터 압축"
         },
         "LOCAL_FILE": {
           "L_SYNC_FILE_PATH": "동기화 파일 경로",
@@ -665,7 +667,7 @@
         "L_ENABLE_SYNCING": "동기화 활성화",
         "L_SYNC_INTERVAL": "동기화 간격",
         "L_SYNC_PROVIDER": "동기화 제공자",
-        "TITLE": "동조",
+        "TITLE": "동기화",
         "WEB_DAV": {
           "CORS_INFO": "<strong>실험적 !!</strong> 이 작업을 수행하려면 Nextcloud 인스턴스에 대한 CORS를 비활성화하거나 제한해야합니다. 이는 보안에 부정적인 영향을 미칠 수 있습니다. 자세한 내용은 <a href='https://github.com/nextcloud/server/issues/3131'>이 스레드</a> 를 참조하십시오. 자신의 책임하에 사용하십시오!",
           "L_BASE_URL": "기본 URL",
@@ -701,7 +703,7 @@
       },
       "FORM_BASIC": {
         "L_COLOR": "색상 (정의되지 않은 기본 테마 색상이 사용 된 경우)",
-        "L_ICON": "상",
+        "L_ICON": "아이콘",
         "L_TITLE": "태그 이름",
         "TITLE": "기본 설정"
       },
@@ -716,7 +718,7 @@
         "ATTACHMENTS": "첨부 파일 {{nr}}",
         "FROM_PARENT": "(부모님)",
         "LOCAL_ATTACHMENTS": "로컬 첨부 파일",
-        "NOTES": "노트",
+        "NOTES": "설명",
         "PARENT": "부모의",
         "REMINDER": "조언",
         "REPEAT": "반복",
@@ -725,8 +727,8 @@
         "TIME": "시각"
       },
       "ADD_TASK_BAR": {
-        "ADD_EXISTING_TASK": "기존 작업 \"{{taskTitle}}\"추가",
-        "ADD_ISSUE_TASK": " {{issueType}}의{{issueNr}} 호 추가",
+        "ADD_EXISTING_TASK": "기존 작업 \"{{taskTitle}}\" 추가",
+        "ADD_ISSUE_TASK": " {{issueType}}의 이슈 #{{issueNr}} 추가",
         "ADD_TASK_TO_BOTTOM_OF_BACKLOG": "백로그 하단에 작업 추가",
         "ADD_TASK_TO_BOTTOM_OF_TODAY": "목록 맨 아래에 작업 추가",
         "ADD_TASK_TO_TOP_OF_BACKLOG": "백로그 맨 위에 작업 추가",
@@ -749,12 +751,12 @@
         "EDIT_REMINDER": "알림 수정",
         "EDIT_TAGS": "태그 편집",
         "MARK_DONE": "완료로 표시",
-        "MARK_UNDONE": "실행 취소로 표시",
+        "MARK_UNDONE": "미완료로 표시",
         "MOVE_TO_BACKLOG": "백 로그로 이동",
         "MOVE_TO_OTHER_PROJECT": "다른 프로젝트로 이동",
         "MOVE_TO_TODAY": "오늘의 목록으로 이동",
         "OPEN_ATTACH": "파일 또는 링크 첨부",
-        "OPEN_ISSUE": "새 브라우저 탭에서 문제 열기",
+        "OPEN_ISSUE": "브라우저에서 열기",
         "OPEN_TIME": "시간 예측 / 소요 시간 추가",
         "REMOVE_FROM_MY_DAY": "내 날에서 제거",
         "REPEAT_EDIT": "반복 작업 구성 편집",
@@ -762,10 +764,10 @@
         "SHOW_UPDATES": "업데이트 표시",
         "TOGGLE_ADDITIONAL": "추가 정보 표시 / 숨기기",
         "TOGGLE_ATTACHMENTS": "첨부 파일 표시 / 숨기기",
-        "TOGGLE_DONE": "완료 / 실행 취소로 표시",
+        "TOGGLE_DONE": "완료/미완료로 표시",
         "TOGGLE_SUB_TASK_VISIBILITY": "하위 작업 가시성 토글",
-        "TRACK_TIME": "추적 시작 시간",
-        "TRACK_TIME_STOP": "추적 시간 일시 중지",
+        "TRACK_TIME": "시간 추적 시작",
+        "TRACK_TIME_STOP": "시간 추적 일시 중지",
         "UPDATE_ISSUE_DATA": "문제 데이터 업데이트"
       },
       "D_REMINDER_ADD": {
@@ -806,10 +808,10 @@
       "D_TIME": {
         "ADD_FOR_OTHER_DAY": "다른 날에 보낸 시간을 추가하십시오.",
         "DELETE_FOR": "일일 항목 삭제",
-        "ESTIMATE": "견적",
-        "TIME_SPENT": "지출 된 시간",
+        "ESTIMATE": "예상",
+        "TIME_SPENT": "사용한 시간",
         "TIME_SPENT_ON": "경과 시간 {{date}}",
-        "TITLE": "소요 시간 / 견적"
+        "TITLE": "소요 시간 / 예상 시간"
       },
       "D_TIME_FOR_DAY": {
         "ADD_ENTRY_FOR": " {{date}}에 대한 새 항목 추가",
@@ -828,7 +830,7 @@
         "FOUND_MOVE_FROM_OTHER_LIST": " <strong>{{contextTitle}}</strong> 의 작업 <strong>{{title}}</strong> 을 (를) 현재 목록에 추가했습니다.",
         "FOUND_RESTORE_FROM_ARCHIVE": "아카이브의 문제와 관련된 복원 된 작업 <strong>{{title}}</strong> ",
         "LAST_TAG_DELETION_WARNING": "프로젝트가 아닌 작업의 마지막 태그를 제거하려고합니다. 이것은 허용되지 않습니다!",
-        "REMINDER_ADDED": "예약 된 작업 \"{{title}}\"",
+        "REMINDER_ADDED": "예약된 작업 \"{{title}}\"",
         "REMINDER_DELETED": "할 일 목록 삭제",
         "REMINDER_UPDATED": "\"{{title}}\"작업에 대한 알림이 업데이트되었습니다.",
         "TASK_CREATED": "\"{{title}}\"작업 생성"
@@ -885,11 +887,11 @@
       "MENU_TITLE": "타임 라인",
       "NOW": "지금",
       "NO_TASKS": "현재 작업이 없습니다. 상단 표시 줄의 + 버튼을 통해 몇 가지 작업을 추가하세요.",
+      "START": "작업 시작",
+      "TASK_PROJECTION_INFO": "예약된 반복 작업의 미래 예측",
       "S": {
         "CAL_PROVIDER_ERROR": "타임라인 Cal Provider 오류: {{errTxt}}"
-      },
-      "START": "작업 시작",
-      "TASK_PROJECTION_INFO": "예약된 반복 작업의 미래 예측"
+      }
     },
     "TIME_TRACKING": {
       "B": {
@@ -976,6 +978,26 @@
         "EXPORT": "주 데이터 내보내기",
         "NO_DATA": "이번 주에는 아직 할 일이 없습니다.",
         "TITLE": "표제"
+      }
+    },
+    "GOOGLE": {
+      "BANNER": {
+        "AUTH_FAIL": "GoogleApi : 인증에 실패하여 다시 로그인하십시오!"
+      },
+      "DIALOG": {
+        "CREATE_SYNC_FILE": "Google 드라이브 : <strong>\"{{fileName}}\"</strong> 이름의 파일이 없습니다. <strong>Google 드라이브의 동기화 파일로</strong> 파일을 만드시겠습니까?",
+        "USE_EXISTING_SYNC_FILE": "Google 드라이브 : <strong>기존</strong> 파일 <strong>\"{{fileName}}\"</strong> 을 동기화 파일로 사용 하시겠습니까? 그렇지 않은 경우 동기화 파일 이름을 변경하십시오."
+      },
+      "S": {
+        "MULTIPLE_SYNC_FILES_WITH_SAME_NAME": "이름이 \"{{newFileName}}\"인 파일이 여러 개 있습니다. 하나만 제외하고 모두 삭제하거나 다른 이름을 선택하십시오.",
+        "SYNC_FILE_CREATION_ERROR": "Google 드라이브 : 동기화 파일을 만드는 동안 오류가 발생했습니다. {{err}}",
+        "UPDATED_SYNC_FILE_NAME": "Google 드라이브 : 업데이트 된 동기화 파일 이름"
+      },
+      "S_API": {
+        "ERR": "GoogleApi 오류 : {{errStr}}",
+        "ERR_NO_FILE_ID": "GoogleApi : 지정된 파일 ID가 없습니다.",
+        "ERR_NO_FILE_NAME": "GoogleApi : 파일 이름이 지정되지 않았습니다.",
+        "SUCCESS_LOGIN": "GoogleApi : 로그인 성공"
       }
     }
   },
@@ -1137,9 +1159,9 @@
     "SOUND": {
       "DONE_SOUND": "작업 완료 소리",
       "IS_INCREASE_DONE_PITCH": "모든 작업에 대한 피치 높이기",
-      "IS_PLAY_DONE_SOUND": "작업이 완료로 표시되면 소리 재생",
       "TITLE": "소리",
-      "VOLUME": "음량"
+      "VOLUME": "음량",
+      "IS_PLAY_DONE_SOUND": "작업이 완료로 표시되면 소리 재생"
     },
     "TAKE_A_BREAK": {
       "HELP": "<div> <p>중단하지 않고 지정된 시간 동안 작업 한 경우 다시 알림을 구성 할 수 있습니다.</p> <p>표시된 메시지를 수정할 수 있습니다. ${duration} 은 휴식 시간없이 바뀝니다.</p> </div>",
@@ -1154,16 +1176,16 @@
       "TITLE": "휴식 알림"
     },
     "TIMELINE": {
-      "CAL_PROVIDERS": "캘린더 제공자(실험 및 선택사항)",
-      "CAL_PROVIDERS_ADD": "소스 추가",
-      "CAL_PROVIDERS_INFO": "iCal(예: Google 캘린더)의 데이터도 로드하고 표시하도록 타임라인을 선택적으로 구성할 수 있습니다.",
       "HELP": "타임 라인 기능은 계획된 작업이 시간에 따라 어떻게 진행되는지에 대한 빠른 개요를 제공해야합니다. <a href='#/timeline'>'타임 라인'</a>아래의 왼쪽 메뉴에서 찾을 수 있습니다.",
-      "L_CAL_PATH": "캘린더 ICAL의 URL/파일 경로(선택 사항)",
       "L_IS_WORK_START_END_ENABLED": "예정되지 않은 작업 흐름을 특정 작업 시간으로 제한",
       "L_WORK_END": "근무일 종료",
       "L_WORK_START": "근무일 시작",
       "TITLE": "타임 라인",
-      "WORK_START_END_DESCRIPTION": "예 : 17:00"
+      "WORK_START_END_DESCRIPTION": "예 : 17:00",
+      "CAL_PROVIDERS": "캘린더 제공자(실험 및 선택사항)",
+      "CAL_PROVIDERS_ADD": "소스 추가",
+      "CAL_PROVIDERS_INFO": "iCal(예: Google 캘린더)의 데이터도 로드하고 표시하도록 타임라인을 선택적으로 구성할 수 있습니다.",
+      "L_CAL_PATH": "캘린더 ICAL의 URL/파일 경로(선택 사항)"
     },
     "TRACKING_REMINDER": {
       "HELP": "시간 추적을 시작하는 것을 잊은 경우 표시 할 배너를 구성하십시오.",
@@ -1189,13 +1211,13 @@
     "DBX_GEN_TOKEN": "보관 용 계정 : 토큰 생성 ...",
     "DBX_META": "Dropbox : 파일 메타 가져 오기 ...",
     "DBX_UPLOAD": "보관 용 계정 : 파일 업로드 ...",
-    "GDRIVE_DOWNLOAD": "Google 드라이브 : 파일 다운로드 ...",
-    "GDRIVE_UPLOAD": "Google 드라이브 : 파일 업로드 ...",
     "GITHUB_LOAD_ISSUE": "GitHub : 이슈 데이터로드 ...",
     "JIRA_LOAD_ISSUE": "Jira : 이슈 데이터로드 중 ...",
     "UNKNOWN": "원격 데이터로드",
     "WEB_DAV_DOWNLOAD": "WebDAV : 데이터 다운로드 중 ...",
-    "WEB_DAV_UPLOAD": "WebDAV : 데이터 업로드 중 ..."
+    "WEB_DAV_UPLOAD": "WebDAV : 데이터 업로드 중 ...",
+    "GDRIVE_DOWNLOAD": "Google 드라이브 : 파일 다운로드 ...",
+    "GDRIVE_UPLOAD": "Google 드라이브 : 파일 업로드 ..."
   },
   "MH": {
     "ADD_NEW_TASK": "새 작업 추가",

@@ -210,26 +210,6 @@
         "ERR_UNKNOWN": "GitLab: Unbekannter Fehler {{statusCode}} {{errorMsg}}"
       }
     },
-    "GOOGLE": {
-      "BANNER": {
-        "AUTH_FAIL": "GoogleApi: Authentifizierung fehlgeschlagen. Bitte versuchen Sie erneut, sich anzumelden."
-      },
-      "DIALOG": {
-        "CREATE_SYNC_FILE": "Google Drive: Es wurde keine Datei mit dem Namen <strong>\"{{fileName}}\"</strong> gefunden. <strong>Erstelle</strong> es als Synchronisierungsdatei auf Google Drive?",
-        "USE_EXISTING_SYNC_FILE": "Google Drive: <strong>vorhandene</strong> Datei <strong>\"{{fileName}}\"</strong> als Synchronisierungsdatei verwenden? Wenn nicht, ändern Sie bitte den Namen der Sync-Datei."
-      },
-      "S": {
-        "MULTIPLE_SYNC_FILES_WITH_SAME_NAME": "Mehrere Dateien mit dem Namen \"{{newFileName}}\" gefunden. Bitte löschen Sie alle bis auf einen oder wählen Sie einen anderen Namen.",
-        "SYNC_FILE_CREATION_ERROR": "Google Drive: Fehler beim Erstellen der Synchronisierungsdatei. {{err}}",
-        "UPDATED_SYNC_FILE_NAME": "Google Drive: Der Name der Synchronisierungsdatei wurde aktualisiert"
-      },
-      "S_API": {
-        "ERR": "GoogleApi-Fehler: {{errStr}}",
-        "ERR_NO_FILE_ID": "GoogleApi: Keine Datei-ID angegeben",
-        "ERR_NO_FILE_NAME": "GoogleApi: Es wurde kein Dateiname angegeben",
-        "SUCCESS_LOGIN": "GoogleApi: Anmeldung erfolgreich"
-      }
-    },
     "ISSUE": {
       "DEFAULT": {
         "ISSUES_STR": "Probleme",
@@ -438,7 +418,6 @@
       "D_ADD": {
         "NOTE_LABEL": "Geben Sie einen Text ein, um ihn als Notiz zu speichern ..."
       },
-      "EDIT_FULLSCREEN": "Im Vollbildmodus bearbeiten",
       "NOTES_CMP": {
         "ADD_BTN": "Neue Notiz hinzufügen",
         "DROP_TO_ADD": "Klicken Sie hier, um eine neue Notiz hinzuzufügen",
@@ -447,7 +426,8 @@
       "NOTE_CMP": {
         "DISABLE_PARSE": "Deaktivieren Sie die Markdown-Formatierung",
         "ENABLE_PARSE": "Markdown-Formatierung aktivieren"
-      }
+      },
+      "EDIT_FULLSCREEN": "Im Vollbildmodus bearbeiten"
     },
     "OPEN_PROJECT": {
       "DIALOG_INITIAL": {
@@ -668,8 +648,8 @@
           "L_ACCESS_TOKEN": "Zugriffstoken (generiert aus Auth-Code)"
         },
         "GOOGLE": {
-          "L_IS_COMPRESS_DATA": "Daten komprimieren",
-          "L_SYNC_FILE_NAME": "Dateiname synchronisieren"
+          "L_SYNC_FILE_NAME": "Dateiname synchronisieren",
+          "L_IS_COMPRESS_DATA": "Daten komprimieren"
         },
         "LOCAL_FILE": {
           "L_SYNC_FILE_PATH": "Dateipfad synchronisieren",
@@ -945,11 +925,11 @@
       "MENU_TITLE": "Zeitleiste",
       "NOW": "Jetzt",
       "NO_TASKS": "Derzeit gibt es keine Aufgaben. Bitte fügen Sie einige Aufgaben über die Schaltfläche + in der oberen Leiste hinzu.",
+      "START": "Arbeitsbeginn",
+      "TASK_PROJECTION_INFO": "Zukunftsprojektion einer geplanten wiederkehrenden Aufgabe",
       "S": {
         "CAL_PROVIDER_ERROR": "Fehler beim Timeline-Kal.-Anbieter: {{errTxt}}"
-      },
-      "START": "Arbeitsbeginn",
-      "TASK_PROJECTION_INFO": "Zukunftsprojektion einer geplanten wiederkehrenden Aufgabe"
+      }
     },
     "TIME_TRACKING": {
       "B": {
@@ -982,18 +962,6 @@
         "TASK": "Aufgabe",
         "TRACK_TO": "Erfassen nach:",
         "UNTRACKED_TIME": "Nicht erfasste Zeit:"
-      }
-    },
-    "WELCOME": {
-      "D_WELCOME": {
-        "L1": "Erste Schritte",
-        "L2": "Einführungsvideo auf YouTube",
-        "L3": "Eine Frage stellen",
-        "LETS_GO": "Los gehts!!",
-        "MOBILE_INFO": "<strong>Swipe</strong> erstellte Aufgaben <strong>nach rechts, um sie als erledigt zu merkieren</strong>.\n    Swipe sie nach rechts um sie zu planen. Halte sie gedrückt für weitere Aktionen.",
-        "T1": "Schön zu sehen, dass Sie sich entschieden haben, dieser App einen Versuch zu geben! \uD83E\uDD84",
-        "T2": "Wenn Sie Probleme haben, sich zurechtzufinden, gibt es viele Orte an denen Sie\n    Hilfe finden können:",
-        "TITLE": "Wilkommen bei Super Productivity!"
       }
     },
     "WORKLOG": {
@@ -1050,6 +1018,38 @@
         "EXPORT": "Wochendaten exportieren",
         "NO_DATA": "Noch keine Aufgaben in dieser Woche.",
         "TITLE": "Titel"
+      }
+    },
+    "GOOGLE": {
+      "BANNER": {
+        "AUTH_FAIL": "GoogleApi: Authentifizierung fehlgeschlagen. Bitte versuchen Sie erneut, sich anzumelden."
+      },
+      "DIALOG": {
+        "CREATE_SYNC_FILE": "Google Drive: Es wurde keine Datei mit dem Namen <strong>\"{{fileName}}\"</strong> gefunden. <strong>Erstelle</strong> es als Synchronisierungsdatei auf Google Drive?",
+        "USE_EXISTING_SYNC_FILE": "Google Drive: <strong>vorhandene</strong> Datei <strong>\"{{fileName}}\"</strong> als Synchronisierungsdatei verwenden? Wenn nicht, ändern Sie bitte den Namen der Sync-Datei."
+      },
+      "S": {
+        "MULTIPLE_SYNC_FILES_WITH_SAME_NAME": "Mehrere Dateien mit dem Namen \"{{newFileName}}\" gefunden. Bitte löschen Sie alle bis auf einen oder wählen Sie einen anderen Namen.",
+        "SYNC_FILE_CREATION_ERROR": "Google Drive: Fehler beim Erstellen der Synchronisierungsdatei. {{err}}",
+        "UPDATED_SYNC_FILE_NAME": "Google Drive: Der Name der Synchronisierungsdatei wurde aktualisiert"
+      },
+      "S_API": {
+        "ERR": "GoogleApi-Fehler: {{errStr}}",
+        "ERR_NO_FILE_ID": "GoogleApi: Keine Datei-ID angegeben",
+        "ERR_NO_FILE_NAME": "GoogleApi: Es wurde kein Dateiname angegeben",
+        "SUCCESS_LOGIN": "GoogleApi: Anmeldung erfolgreich"
+      }
+    },
+    "WELCOME": {
+      "D_WELCOME": {
+        "L1": "Erste Schritte",
+        "L2": "Einführungsvideo auf YouTube",
+        "L3": "Eine Frage stellen",
+        "LETS_GO": "Los gehts!!",
+        "MOBILE_INFO": "<strong>Swipe</strong> erstellte Aufgaben <strong>nach rechts, um sie als erledigt zu merkieren</strong>.\n    Swipe sie nach rechts um sie zu planen. Halte sie gedrückt für weitere Aktionen.",
+        "T1": "Schön zu sehen, dass Sie sich entschieden haben, dieser App einen Versuch zu geben! 🦄",
+        "T2": "Wenn Sie Probleme haben, sich zurechtzufinden, gibt es viele Orte an denen Sie\n    Hilfe finden können:",
+        "TITLE": "Wilkommen bei Super Productivity!"
       }
     }
   },
@@ -1216,9 +1216,9 @@
     "SOUND": {
       "DONE_SOUND": "Aufgabe erledigt Ton",
       "IS_INCREASE_DONE_PITCH": "Erhöht die Tonhöhe für jede erledigte Aufgabe",
-      "IS_PLAY_DONE_SOUND": "Ton abspielen, wenn die Aufgabe als erledigt markiert ist",
       "TITLE": "Sound",
-      "VOLUME": "Volumen"
+      "VOLUME": "Volumen",
+      "IS_PLAY_DONE_SOUND": "Ton abspielen, wenn die Aufgabe als erledigt markiert ist"
     },
     "TAKE_A_BREAK": {
       "HELP": "<div> <p>Ermöglicht die Konfiguration einer wiederkehrenden Erinnerung, wenn Sie eine bestimmte Zeit ohne Pause gearbeitet haben.</p> <p>Sie können die angezeigte Nachricht ändern. ${duration} wird durch die ohne Unterbrechung verbrachte Zeit ersetzt.</p> </div>",
@@ -1233,16 +1233,16 @@
       "TITLE": "Pausenerinnerung"
     },
     "TIMELINE": {
-      "CAL_PROVIDERS": "Kalenderanbieter (experimentell und optional)",
-      "CAL_PROVIDERS_ADD": "iCal Quelle hinzufügen",
-      "CAL_PROVIDERS_INFO": "Optional können Sie die Zeitleiste so konfigurieren, dass auch Daten aus iCal (z. B. Google Kalender) geladen und angezeigt werden.",
       "HELP": "Die Timeline-Funktion soll Ihnen einen schnellen Überblick darüber geben, wie sich Ihre geplanten Aufgaben im Laufe der Zeit entwickeln. Sie finden es im Menü auf der linken Seite unter <a href='#/timeline'>'Timeline'</a>.",
-      "L_CAL_PATH": "URL/Dateipfad für Kalender-ICAL (optional)",
       "L_IS_WORK_START_END_ENABLED": "Beschränken Sie ungeplante Aufgaben auf bestimmte Arbeitszeiten",
       "L_WORK_END": "Ende des Arbeitstages",
       "L_WORK_START": "Beginn des Arbeitstages",
       "TITLE": "Zeitleiste",
-      "WORK_START_END_DESCRIPTION": "z. B. 17:00"
+      "WORK_START_END_DESCRIPTION": "z. B. 17:00",
+      "CAL_PROVIDERS": "Kalenderanbieter (experimentell und optional)",
+      "CAL_PROVIDERS_ADD": "iCal Quelle hinzufügen",
+      "CAL_PROVIDERS_INFO": "Optional können Sie die Zeitleiste so konfigurieren, dass auch Daten aus iCal (z. B. Google Kalender) geladen und angezeigt werden.",
+      "L_CAL_PATH": "URL/Dateipfad für Kalender-ICAL (optional)"
     },
     "TRACKING_REMINDER": {
       "HELP": "Konfigurieren Sie ein Banner, das angezeigt wird, falls Sie vergessen haben, die Zeiterfassung zu starten.",
@@ -1268,13 +1268,13 @@
     "DBX_GEN_TOKEN": "Dropbox: Token generieren ...",
     "DBX_META": "Dropbox: Holen Sie sich Datei Meta ...",
     "DBX_UPLOAD": "Dropbox: Datei hochladen ...",
-    "GDRIVE_DOWNLOAD": "Google Drive: Datei herunterladen ...",
-    "GDRIVE_UPLOAD": "Google Drive: Datei hochladen ...",
     "GITHUB_LOAD_ISSUE": "GitHub: Problemdaten laden ...",
     "JIRA_LOAD_ISSUE": "Jira: Problemdaten laden ...",
     "UNKNOWN": "Remote-Daten laden",
     "WEB_DAV_DOWNLOAD": "WebDAV: Daten herunterladen ...",
-    "WEB_DAV_UPLOAD": "WebDAV: Daten hochladen ..."
+    "WEB_DAV_UPLOAD": "WebDAV: Daten hochladen ...",
+    "GDRIVE_DOWNLOAD": "Google Drive: Datei herunterladen ...",
+    "GDRIVE_UPLOAD": "Google Drive: Datei hochladen ..."
   },
   "MH": {
     "ADD_NEW_TASK": "Neue Aufgabe hinzufügen",
